@@ -209,13 +209,19 @@ a{
         top: 70px;
         z-index: 1000;
     }
-    .space{
-        height: 0;
+
+}
+@media  screen and (width < 1100px) {
+    .top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
     }
     .tags{
         justify-content: center;
     }
-    .row h1{
-        text-align: center;
+    .space{
+        height: 0;
     }
 }
