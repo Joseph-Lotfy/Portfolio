@@ -261,6 +261,7 @@ a{
 .tags{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .card-body{
     padding: 0 !important;
@@ -303,6 +304,15 @@ a{
     .about-cont{
         margin-top: 50px;
         margin-bottom: 100px;
+    }
+}
+@media  screen and (width < 750px){
+    .card-body{
+        padding-inline: 0 !important;
+        padding-top: 20px !important;
+    }
+    .row{
+        padding: 10px !important;
     }
 }
 
