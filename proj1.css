@@ -143,9 +143,9 @@ a{
     overflow: hidden;
 }
 .proj{
-    height: 600px;
     background-color: rgb(13,29,49, 0.9);
     max-width: 73rem !important;
+    cursor: pointer;
 }
 .proj .row{
     max-width: 80%;
@@ -187,6 +187,14 @@ a{
 .proj:hover .lin{
     background-color: #332469;
 }
+.descreption{
+    max-width: 55rem;
+    margin: auto;
+    color: white !important;
+}
+.descreption p, .descreption li{
+    font-size: 17px !important;
+}
 @media  screen and (width < 600px) {
     .content{
         display: inline-block;
@@ -225,3 +233,4 @@ a{
         height: 0;
     }
 }
+
