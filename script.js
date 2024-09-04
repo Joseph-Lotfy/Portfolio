@@ -24,7 +24,7 @@ function show_list(){
     if(list_flag == 0){
         console.log("show");
         list_flag = 1;
-        list.style.height= "180px";
+        list.style.height= "200px";
         list.style.padding= "20px";
         cont.style.transform = 'rotate(90deg)'
 
@@ -52,3 +52,13 @@ cards.forEach(card => {
     });
 });
 
+let links = document.querySelectorAll('.up');
+links.forEach(link =>{
+    link.addEventListener('click', () => {
+        console.log("hide");
+        list_flag = 0;
+        list.style.height = "0px";
+        list.style.padding = "0px";
+        cont.style.transform = 'rotate(0deg)'
+    })
+})

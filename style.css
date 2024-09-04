@@ -1,4 +1,7 @@
 /* Header */
+html{
+    scroll-behavior: smooth;
+}
 header{
     max-width: 78rem;
     margin: auto;
@@ -233,9 +236,11 @@ a{
 }
 .projects{
     max-width: 70rem !important;
+    margin-top: 150px !important;
 }
 .projects h1{
     color: white;
+    margin-bottom: 80px !important; 
 }
 .card{
     background: linear-gradient(to right, #18314f, #0d1d31) !important;

@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 header{
     max-width: 78rem;
     margin: auto;
