@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
-<body>
+<body >
     <!-- BackGround Start -->
     <div class="stars">
         <div class="star"></div>
@@ -42,127 +42,178 @@
             <li class="Logo">
                 <a href="#home" class="logo_name">Joseph Lotfy</a>
             </li>
-            <li class="nav_ele"><a href="#" class="link less">Home</a></li>
-            <li class="nav_ele"><a href="#about" class="link less">About me</a></li>
-            <li class="nav_ele"><a href="#skil" class="link less">Skills</a></li>
-            <li class="nav_ele"><a href="#projs" class="link less">Projects</a></li>
-            <li class="nav_ele"><a href="#Cont" class="link less">Contact</a></li>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skil">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projs">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cont">Contact</a>
+                  </li>
+                
+            </ul>
             <button type="button" class="content" onclick="show_list()" id="content"><li ><i class="bi bi-list"></i></button>
         </ul>
     </header>
     <div class="container list" id="list">
-        <h3  class="active"><a href="#" class="up">home</a></h3>
+        <h3  class="active"><a href="#" class="up">Home</a></h3>
         <h3><a href="#about" class="up">About me</a></h3>
-        <h3><a href="#skil" class="up">skills</a></h3>
+        <h3><a href="#skil" class="up">Skills</a></h3>
         <h3><a href="#projs" class="up">Projects</a></h3>
         <h3><a href="#Cont" class="up">Contact</a></h3>
     </div>
     <!-- Header end -->
-    <div id="about"></div>
     <!-- About Start -->
-    <div class="container about-cont" id="about">
-        <div class="row gap-3 justify-content-between">
-            <div class="col-md-5 AM-T ">
-                <h1 class="mb-3">About Me</h1>
-                <p >I'm Joseph Lotfy, a professional front-end web developer based in Cairo, Egypt. My journey into web development began when my brother invited me to provide feedback on a website he was creating. This sparked a passion that has driven me ever since.</p>
-                <p >
-                    With five years of experience, I specialize in designing user-friendly, visually appealing, and highly functional front-end interfaces that meet diverse customer needs.
-                </p>
-            </div>
-            <div class="col-md-5 my-img ">
-                <img src="img/my-img.jpeg">
-            </div>
-            <div id="skil"></div>
-
-        </div>
-    </div>
-    <!-- About Start -->
-
-
-    <!-- Skills Start -->
-    <div class="container">
-        <div class="row gap-5 justify-content-between skills">
-            <h1 class="mb-5 text-center animated slideInLeft wow" style="font-weight: 700;">Skills</h1>
-            <div class="col-md-3 fadeInUp animated wow bord">
-                <img src="img/HTML.png">
-                <h1>HTML</h1>
-            </div>
-            <div class="col-md-3 bord fadeInUp animated wow bord">
-                <img src="img/CSS.png">
-                <h1>CSS</h1>
-                
-            </div>
-            <div class="col-md-3 bord fadeInUp animated wow bord">
-                <img src="img/JS (2).png ">
-                <h1>JavaScript</h1>
-
-            </div>
-            <div class="col-md-3 bord fadeInUp animated wow bord">
-                <img src="img/bootstrap-logo-5634.png" >
-                <h1>Bootstrap</h1>
-            </div>
-            <div class="col-md-3 bord fadeInUp animated wow bord">
-                <img src="img/Angular.png" >
-                <h1>Angular</h1>
-            </div>
-            <div class="col-md-3 bord fadeInUp animated wow bord">
-                <img src="img/AWS3.png" class="aws">
-                <h1>AWS</h1>
-            </div>
-        </div>
-    </div>
-    <!-- Skills Start -->
-
-    <div id="projs"></div>
-    <!-- Projects Start -->
-    <div class="container projects" id="projects-container">
-        <h1 class="my-5 text-center animated slideInLeft wow" style="font-weight: 700;">Projects</h1>
-
-        <a href="proj1.html">
-            <div class="card mb-5 fadeInUp animated wow" style="max-width: 78rem;" id="proj1">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="img/Makaan.png" class="img-fluid rounded-start" alt="...">
+    <section id="about">
+        <div class="container about-cont" >
+            <div class="row gap-3 justify-content-between">
+                <div class="col-md-5 AM-T ">
+                    <h1 class="mb-3">About Me</h1>
+                    <p >I'm Joseph Lotfy, a professional front-end web developer based in Cairo, Egypt. My journey into web development began when my brother invited me to provide feedback on a website he was creating. This sparked a passion that has driven me ever since.</p>
+                    <p >
+                        With five years of experience, I specialize in designing user-friendly, visually appealing, and highly functional front-end interfaces that meet diverse customer needs.
+                    </p>
                 </div>
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Makaan </h5>
+                <div class="col-md-5 my-img ">
+                    <img src="img/my-img.jpeg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About end -->
+
+
+    <!-- Skills Start -->
+    <section id="skil">
+        <div class="container" >
+            <div class="row gap-5 justify-content-between skills">
+                <h1 class="mb-5 text-center animated slideInLeft wow" style="font-weight: 700;">Skills</h1>
+                <div class="col-md-3 fadeInUp animated wow bord">
+                    <img src="img/HTML.png">
+                    <h1>HTML</h1>
+                </div>
+                <div class="col-md-3 bord fadeInUp animated wow bord">
+                    <img src="img/CSS.png">
+                    <h1>CSS</h1>
+                    
+                </div>
+                <div class="col-md-3 bord fadeInUp animated wow bord">
+                    <img src="img/JS (2).png ">
+                    <h1>JavaScript</h1>
+
+                </div>
+                <div class="col-md-3 bord fadeInUp animated wow bord">
+                    <img src="img/bootstrap-logo-5634.png" >
+                    <h1>Bootstrap</h1>
+                </div>
+                <div class="col-md-3 bord fadeInUp animated wow bord">
+                    <img src="img/Angular.png" >
+                    <h1>Angular</h1>
+                </div>
+                <div class="col-md-3 bord fadeInUp animated wow bord">
+                    <img src="img/AWS3.png" class="aws">
+                    <h1>AWS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Start -->
+
+    <!-- Projects Start -->
+    <section id="projs">
+        <div class="container projects" id="projects-container">
+            <h1 class="my-5 text-center animated slideInLeft wow" style="font-weight: 700;">Projects</h1>
+
+            <a href="proj1.html">
+                <div class="card mb-5 fadeInUp animated wow" style="max-width: 78rem;" id="proj1">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="img/Makaan.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Makaan </h5>
+                            <h6 class="card-date mb-2"><i class="bi bi-calendar3"></i> Sep 1th 2024</h6>
+                            <div class="lin" id="lin"></div>
+
+                            <p class="card-text">Makaan is a user-centric and fully responsive website crafted using HTML, CSS, and JavaScript. This platform is designed to simplify the home-buying process, offering users a seamless experience in finding and purchasing their dream homes.</p>
+                            <div class="tags">
+                                <div class="tag">HTML</div>
+                                <div class="tag">CSS</div>
+                                <div class="tag">JS</div>
+                                <div class="tag">Responsive</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="card mb-3 fadeInUp animated wow" style="max-width: 78rem;" id="proj1">
+                    <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="img/portfolio.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                        <h5 class="card-title">Portfolio </h5>
                         <h6 class="card-date mb-2"><i class="bi bi-calendar3"></i> Sep 1th 2024</h6>
                         <div class="lin" id="lin"></div>
 
-                        <p class="card-text">Makaan is a user-centric and fully responsive website crafted using HTML, CSS, and JavaScript. This platform is designed to simplify the home-buying process, offering users a seamless experience in finding and purchasing their dream homes.</p>
-                        <div class="tags">
-                            <div class="tag">HTML</div>
-                            <div class="tag">CSS</div>
-                            <div class="tag">JS</div>
-                            <div class="tag">Responsive</div>
+                        <p class="card-text">Welcome to my personal portfolio website, a digital showcase of my skills, projects, and professional journey as a front-end web developer. This site is designed with a focus on aesthetics, functionality, and user experience, providing visitors with an engaging and seamless browsing experience.</p>
                         </div>
                     </div>
-                </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="card mb-3 fadeInUp animated wow" style="max-width: 78rem;" id="proj1">
-                <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="img/Makaan.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body">
-                    <h5 class="card-title">Makaan </h5>
-                    <h6 class="card-date mb-2"><i class="bi bi-calendar3"></i> Sep 1th 2024</h6>
-                    <div class="lin" id="lin"></div>
-
-                    <p class="card-text">Makaan is a user-centric and fully responsive website crafted using HTML, CSS, and JavaScript. This platform is designed to simplify the home-buying process, offering users a seamless experience in finding and purchasing their dream homes.</p>
                     </div>
                 </div>
-                </div>
-            </div>
-        </a>
-    </div>
+            </a>
+        </div>
+    </section>
     <!-- Project End -->
+
+
+
+
+
+
+
+    <!-- Contact Form -->
+    <section class="container contact" id="cont">
+        <h1 class="mb-5 text-center  slideInLeft wow animated" style="font-weight: 700; visibility: visible; animation-name: slideInLeft;">Contact</h1>
+        <form >
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput" >First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com" required>
+                <label for="floatingInput2">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Phone Number</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button type="submit" class="btn btn-primary my-4 sub">Submit</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
     <script src="script.js"></script>
     <script src="wow/wow.min.js"></script>
   <script>

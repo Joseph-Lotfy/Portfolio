@@ -57,32 +57,14 @@ a{
     border-radius: 50%;
     margin-right: 5px;
 }
-.more{
-    display: none;
-}
-.less{
-    display: block;
-}
-.link{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding-block: 20px;
-    margin-right: 28px;
-    transition-property:  text-shadow ;
-    transition-duration: .2s;
-}
-.first_link{
-    margin-top: 0px;
-}
-.link:hover{
-    text-shadow: 0px 0px 20px  white,
-                 0px 0px 20px  white,
-                 0px 0px 20px  white;
+.nav-link{
+    color: white !important;
+    font-size: 18px !important;
 }
 .active{
-    color: var(--primary) !important;
-    text-decoration: none;
+    background-color: cyan !important;
+    color: #09192d !important;
+    font-weight: 600 !important;
 }
 /* Dropdown menu start */
 .hover_container {
@@ -155,8 +137,7 @@ a{
     color: white;
 }
 .about-cont{
-    margin-top: 100px;
-    margin-bottom: 200px;
+    padding-top: 100px;
 }
 .row{
     padding-inline: 20px;
@@ -184,12 +165,15 @@ a{
 .my-img{
     text-align: center;
 }
+#skil{
+    padding-top: 200px;
+}
 .skills img{
     width: 70%;
     margin-bottom: 40px;
     text-align: center;
 }
-.skills .col-md-3{
+.bord{
     text-align: center;
     padding: 30px;
     /* border: 2px solid #0c0d13;
@@ -202,6 +186,7 @@ a{
     border: 4px solid transparent; */
     position: relative;
     transition: transform .2s;
+    cursor: pointer;
     
 
 }
@@ -218,6 +203,7 @@ a{
     -webkit-mask-composite: xor;
             mask-composite: exclude;
     pointer-events: none;
+    z-index: -100;
 }
 .bord:hover {
     transform: scale(1.1);
@@ -236,7 +222,7 @@ a{
 }
 .projects{
     max-width: 70rem !important;
-    margin-top: 150px !important;
+    padding-top: 150px !important;
 }
 .projects h1{
     color: white;
@@ -263,15 +249,16 @@ a{
     background-color: brown;
     transition: width 0.5s;
 }
+.card-body{
+    padding: 0 !important;
+    padding-left: 20px !important;
+}
 .tags{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
-.card-body{
-    padding: 0 !important;
-    padding-left: 20px !important;
-}
+
 .tags .tag{
     background-color: rgba(83, 83, 83, .4);
     padding: 5px 10px;
@@ -280,6 +267,58 @@ a{
 }
 .tags .tag:hover{
     background-color: rgba(224, 211, 211, 0.4) !important;
+}
+.form-control{
+    background-color: transparent !important;
+}
+label{
+    background: transparent;
+}
+input,textarea {
+    color: white !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    height: 50px;
+    font-size: 20px !important;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important; /* or any color you prefer */
+}
+.contact{
+    color: white;
+    padding-top: 100px;
+    max-width: 70rem !important;
+}
+/* ::placeholder{
+    color: gray !important;
+} */
+.form-floating > label::after {
+    background-color: transparent !important;
+    color: white !important;
+}
+label{
+    color: rgb(212, 192, 192) !important;
+    font-size: 20px !important;
+
+}
+input:user-valid{
+    border-color: gold;
+}
+input:user-invalid{
+    border-color: green;
+}
+.form-floating{
+    padding-block: 20px;
+}
+.sub{
+    padding-inline: 20px !important;
+    padding-block: 20px !important;
 }
 @media  screen and (width < 600px) {
     .content{
@@ -291,17 +330,21 @@ a{
         transition: transform, 0.5s;
 
     }
-    .nav_ele{
-        display: none;
+    .nav-pills{
+        display: none !important;
     }
     .list{
-        color: white;
+        color: white !important;
         background-color: #09192d;
         border-radius: 5px;
         transition: height .5s, padding .5s;
         position: sticky;
         top: 70px;
         z-index: 1000;
+    }
+    a{
+        color: white !important;
+
     }
     .space{
         height: 0;

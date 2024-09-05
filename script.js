@@ -62,3 +62,56 @@ links.forEach(link =>{
         cont.style.transform = 'rotate(0deg)'
     })
 })
+  // Function to check if an element is in the viewport
+
+  window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      let currentSection = '';
+
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (pageYOffset >= sectionTop) {
+              currentSection = section.getAttribute('id');
+          }
+      });
+
+      navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+              link.classList.add('active');
+          }
+      });
+  });
+  function widthResizer(){
+    var width = window.innerWidth
+    if(width > 600){
+        console.log("hide");
+        list_flag = 0;
+        list.style.height = "0px";
+        list.style.padding = "0px";
+        cont.style.transform = 'rotate(0deg)'
+    }
+  }
+  
+  // Getting the width of the browser on load
+  widthResizer()
+  
+  // Getting the width of the browser whenever the screen resolution changes.
+  (function () {
+    'use strict';
+
+    // The window object should be accessible here
+    window.addEventListener('resize', widthResizer);
+
+    function widthResizer() {
+        var width = window.innerWidth;
+        if (width > 600) {
+            console.log("hide");
+            list_flag = 0;
+            list.style.height = "0px";
+            list.style.padding = "0px";
+            cont.style.transform = 'rotate(0deg)';
+        }
+    }
+})();

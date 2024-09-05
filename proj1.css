@@ -83,7 +83,9 @@ a{
                  0px 0px 20px  white;
 }
 .active{
-    color: var(--primary) !important;
+    text-shadow: 0px 0px 20px  white,
+                 0px 0px 20px  white,
+                 0px 0px 20px  white;
     text-decoration: none;
 }
 /* Dropdown menu start */
@@ -212,13 +214,17 @@ a{
         display: none;
     }
     .list{
-        color: white;
+        color: white !important;
         background-color: #09192d;
         border-radius: 5px;
         transition: height .5s, padding .5s;
         position: sticky;
         top: 70px;
         z-index: 1000;
+    }
+    a{
+        color: white !important;
+
     }
 
 }
