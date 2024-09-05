@@ -186,21 +186,21 @@
     <!-- Contact Form -->
     <section class="container contact" id="cont">
         <h1 class="mb-5 text-center  slideInLeft wow animated" style="font-weight: 700; visibility: visible; animation-name: slideInLeft;">Contact</h1>
-        <form >
+        <form action="https://formspree.io/f/xyzgvdjv" method="POST">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput" >First Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com" required>
+                <input type="email" name="email" class="form-control" id="floatingInput2" placeholder="name@example.com" required>
                 <label for="floatingInput2">Email address</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input type="tel" name="telephone" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Phone Number</label>
             </div>
             <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" name="comments" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Comments</label>
             </div>
             <button type="submit" class="btn btn-primary my-4 sub">Submit</button>
