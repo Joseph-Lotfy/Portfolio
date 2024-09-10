@@ -229,7 +229,7 @@ a{
     margin-bottom: 80px !important; 
 }
 .card{
-    background: linear-gradient(to right, #18314f, #0d1d31) !important;
+    background-color: rgb(22,42,68,0.9) !important;
     transition: background-color .5s;
 }
 .card .row{
@@ -320,7 +320,16 @@ input:user-invalid{
     padding-inline: 20px !important;
     padding-block: 20px !important;
 }
+.container2, .hide{
+    display: none !important;  
+}
 @media  screen and (width < 600px) {
+    .container2{
+        display: flex !important;
+    }
+    .hide{
+        display: block !important;
+    }
     .content{
         display: inline-block;
         font-size: 30px;
@@ -355,6 +364,9 @@ input:user-invalid{
     }
     #skil{
         padding-top: 50px;
+    }
+    #skil{
+        display: none;
     }
 }
 @media  screen and (width < 750px){

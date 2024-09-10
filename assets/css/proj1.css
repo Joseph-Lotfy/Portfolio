@@ -151,6 +151,7 @@ a{
     background-color: rgb(13,29,49, 0.9);
     max-width: 73rem !important;
     cursor: pointer;
+    margin-block: 3rem;
 }
 .proj .row{
     max-width: 80%;
@@ -226,6 +227,9 @@ a{
         color: white !important;
 
     }
+    .proj{
+        margin-block: 0 !important;
+    }
 
 }
 @media  screen and (width < 1100px) {
@@ -241,5 +245,6 @@ a{
     .space{
         height: 0;
     }
+    
 }
 
