@@ -400,7 +400,7 @@ input:user-invalid{
         background-color: #09192d;
         border-radius: 5px;
         transition: height .5s, padding .5s;
-        position: sticky;
+        position: fixed;
         top: 70px;
         z-index: 1000;
     }
@@ -412,7 +412,6 @@ input:user-invalid{
         height: 0;
     }
     .about-cont{
-        margin-bottom: 100px;
         padding-top: 50px;
     }
     #skil{
