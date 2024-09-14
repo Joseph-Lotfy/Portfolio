@@ -93,6 +93,14 @@ links.forEach(link =>{
         cont.style.transform = 'rotate(0deg)'
     }
   }
+
+  function widthResizer(){
+    var width = window.innerWidth
+    if(width < 600){
+        let anis = document.querySelectorAll('.animated')
+        anis.forEach((ani) => ani.classList.remove('animated', 'wow'))
+    }
+  }
   
   // Getting the width of the browser on load
   widthResizer()
