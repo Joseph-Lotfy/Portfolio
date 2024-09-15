@@ -376,7 +376,50 @@ input:user-invalid{
 .container2, .hide{
     display: none !important;  
 }
-@media  screen and (width < 600px) {
+.footer{
+    height: 144px;
+    background-image: linear-gradient(to top right,rgba(2, 2, 3, 0.9) , rgb(22,42,68,0.9)60%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+    margin-top: 100px;
+    width: 100% !important;
+}
+.footer .container{
+    height: 100%;
+}
+.footer .row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.icon-holder{
+    display: flex;
+    justify-content: end;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid aqua;
+    transition: background 0.5s, color 0.5s;
+    margin-left: 10px;
+}
+.footer a{
+    color: inherit;
+}
+.icon:hover{
+    color: black;
+    background-color: aqua;
+}
+@media  screen and (width < 770px) {
     .container2{
         display: flex !important;
     }
@@ -420,8 +463,6 @@ input:user-invalid{
     #skil{
         display: none;
     }
-}
-@media  screen and (width < 750px){
     .card-body{
         padding-inline: 0 !important;
         padding-top: 20px !important;
@@ -429,5 +470,17 @@ input:user-invalid{
     .row{
         padding: 10px !important;
     }
+    .footer .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer{
+        height: 184px;
+    }
+    .footer .icon-holder{
+        justify-content: center;
+    padding-bottom: 10px;
+    }
 }
+
 
