@@ -100,7 +100,7 @@
         </ul>
     </header>
     <div class="container list" id="list">
-        <h3><a href="#about" class="up">About me</a></h3>
+        <h3 id="first_link"><a href="#about" class="up">About me</a></h3>
         <h3><a href="#skil2" class="up">Skills</a></h3>
         <h3><a href="#projs" class="up">Projects</a></h3>
         <h3><a href="#cont" class="up">Contact</a></h3>
@@ -131,8 +131,14 @@
     <section id="skil">
         <div class="container" >
             <div class="row gap-5 justify-content-between skills">
-                <h1 class="mb-5 text-center animated slideInLeft wow" style="font-weight: 700;">Skills</h1>
-
+                <div class="animated slideInLeft wow top">
+                    <h1 class="mt-5 text-center " style="font-weight: 700;">Skills</h1>
+                    <div class="divider">
+                        <div class="line"></div>
+                        <i class="bi bi-star-fill"></i>
+                        <div class="line"></div>
+                    </div>
+                 </div>
                 <div class="col-md-3 fadeInUp animated wow bord">
                     <img src="img/HTML.png">
                     <h1>HTML</h1>
@@ -163,9 +169,16 @@
         </div>
     </section>
     <!-- Skills Start -->
-    <h1 class="mb-5 text-center animated slideInLeft wow hide" style="font-weight: 700; padding-top: 100px;" id="skil2">Skills</h1>
-    
-    <main class="container2" >
+    <div class="container">
+        <div class="hide mb-5 top">
+        <h1 class=" text-center animated slideInLeft wow " style="font-weight: 700; padding-top: 100px;" id="skil2">Skills</h1>
+        <div class="divider">
+            <div class="line"></div>
+            <i class="bi bi-star-fill"></i>
+            <div class="line"></div>
+        </div>
+        </div>
+        <main class="container2" >
         <div class="card__container swiper">
             <div class="card__content">
                <div class="swiper-wrapper">
@@ -260,11 +273,18 @@
             <div class="swiper-pagination"></div>
          </div>
         </main>
-    
+    </div>
     <!-- Projects Start -->
     <section id="projs">
         <div class="container projects" id="projects-container">
-            <h1 class="my-5 text-center animated slideInLeft wow" style="font-weight: 700;">Projects</h1>
+            <div class="my-5 animated slideInLeft wow top">
+                <h1 class=" text-center " style="font-weight: 700;">Projects</h1>
+                <div class="divider">
+                    <div class="line"></div>
+                    <i class="bi bi-star-fill"></i>
+                    <div class="line"></div>
+                </div>
+            </div>
 
             <a href="proj1.html">
                 <div class="card mb-5 fadeInUp animated wow" style="max-width: 78rem;" id="proj1">
@@ -329,7 +349,14 @@
 
     <!-- Contact Form -->
     <section class="container contact" id="cont">
-        <h1 class="mb-5 text-center  slideInLeft wow animated" style="font-weight: 700; visibility: visible; animation-name: slideInLeft;">Contact</h1>
+        <div class="slideInLeft wow animated top">
+            <h1 class=" text-center  " style="font-weight: 700; visibility: visible; animation-name: slideInLeft;">Contact</h1>
+            <div class="divider mb-5">
+                <div class="line"></div>
+                <i class="bi bi-star-fill"></i>
+                <div class="line"></div>
+            </div>
+        </div>
         <form action="https://formspree.io/f/xyzgvdjv" method="POST">
             <div class="form-floating mb-3">
                 <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="name@example.com" required>
