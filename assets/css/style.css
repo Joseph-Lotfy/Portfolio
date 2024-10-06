@@ -186,11 +186,14 @@ a{
 }
 
 /* Page start */
+.AM-head{
+    margin-bottom: 30px;
+}
 .AM-T{
     color: white;
 }
 .about-cont{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .row{
     padding-inline: 20px;
@@ -219,7 +222,7 @@ a{
     text-align: center;
 }
 #skil{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 .skills img{
     width: 70%;
